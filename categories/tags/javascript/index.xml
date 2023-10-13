@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jayna&#39;s Blog</title>
-    <link>https://jayna922.github.io/</link>
-    <description>Recent content on Jayna&#39;s Blog</description>
+    <title>Javascript on Jayna&#39;s Blog</title>
+    <link>https://jayna922.github.io/tags/javascript/</link>
+    <description>Recent content in Javascript on Jayna&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 Oct 2023 10:07:47 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 10:07:47 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用JavaScript的命名魔法：讓你的程式碼充滿活力 (變數命名規則)</title>
       <link>https://jayna922.github.io/blog/name-rule/</link>
