@@ -6,11 +6,23 @@
     <description>Recent content in 技術文章 on Jayna&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 Oct 2023 10:07:47 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用Nginx點燃你的Web伺服器-nginx教學</title>
+      <link>https://jayna922.github.io/blog/code-nginx/</link>
+      <pubDate>Tue, 17 Oct 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://jayna922.github.io/blog/code-nginx/</guid>
+      <description>📌
+第一步: 下載Nginx : 網頁連結 : https://nginx.org/en/download.html
+1.進到網頁後,選取windows的最新版本下載
+2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮</description>
+    </item>
+    
     <item>
       <title>用JavaScript的命名魔法：讓你的程式碼充滿活力 (變數命名規則)</title>
       <link>https://jayna922.github.io/blog/code-name-rule/</link>
-      <pubDate>Wed, 11 Oct 2023 10:07:47 +0800</pubDate>
+      <pubDate>Wed, 11 Oct 2023 18:00:00 +0800</pubDate>
       
       <guid>https://jayna922.github.io/blog/code-name-rule/</guid>
       <description>初期在開發程式時,在命名方法名稱或是命名變數名稱時, 時常煩惱不曉得如何下手命名, 自己也沒有一個規則性, 就依照當下的想法來命名, 加上經驗不足導致自己之後維護不容易需要再重新理解, 因此開始爬文各前輩分享的命名規則, 也順便將自己整理的筆記分享給大家~

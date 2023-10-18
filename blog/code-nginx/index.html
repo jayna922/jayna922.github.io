@@ -6,7 +6,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
-    content="This is meta description">
+    content="內容包含如何下載nginx/啟動nginx/如何將打包後的檔案引入並成功開啟,有興趣的話一起跟著我的腳步前進吧~">
   
   <meta name="author" content="Jayna">
 
@@ -121,136 +121,138 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://jayna922.github.io/images/author.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>我是一名前端工程師</p>
-      <a href="https://jayna922.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a href="/categories/%e6%8a%80%e8%a1%93%e6%96%87%e7%ab%a0/">技術文章</a>
-        </li>
-        <li><a href="/categories/%e6%97%85%e9%81%8a%e6%96%87%e7%ab%a0/">旅遊文章</a>
-        </li>
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/%e6%8a%80%e8%a1%93%e6%96%87%e7%ab%a0" class="text-primary">技術文章</a>
+        
+        <h2>用Nginx點燃你的Web伺服器-nginx教學</h2>
+        <div class="mb-3 post-meta">
+          <span>By Jayna</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>17 October 2023</span>
+          
+        </div>
+        
+        <img src="https://jayna922.github.io/images/post/post-3.jpg" class="img-fluid w-100 mb-4" alt="用Nginx點燃你的Web伺服器-nginx教學">
+        
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#第一步-下載nginx-">第一步: 下載Nginx :</a></li>
+        <li><a href="#第二步-啟動nginx-">第二步: 啟動Nginx :</a></li>
+        <li><a href="#第三步-驗證nginx是否啟動-">第三步: 驗證Nginx是否啟動 :</a></li>
+        <li><a href="#第四步-如何設定讓打包的專案透過nginx開啟-">第四步: 如何設定讓打包的專案透過nginx開啟 :</a></li>
+        <li><a href="#第五步-常用的nginx指令-">第五步: 常用的nginx指令 :</a></li>
       </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/javascript/">Javascript</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/nginx/">Nginx</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/%e5%ae%bf%e9%9c%a7/">宿霧</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
-        
-        <li class="list-inline-item"><a href="https://www.instagram.com/jjj999222/"><i class="ti-instagram"></i></a></li>
-        
-        <li class="list-inline-item"><a href="https://github.com/jayna922"><i class="ti-github"></i></a></li>
-        
-      </ul>
-    </div>
-    
-    
-  </div>
-</div>
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-            
-            <a href="https://jayna922.github.io/tags/nginx/" class="h5 d-block my-3">Nginx</a>
-            <div class="mb-3 post-meta">
-                <span>By Jayna</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>01 January 0001</span>
-                
-            </div>
-            <p class="card-text"></p>
-            <a href="https://jayna922.github.io/tags/nginx/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-            
-            <a href="https://jayna922.github.io/tags/%E5%AE%BF%E9%9C%A7/" class="h5 d-block my-3">宿霧</a>
-            <div class="mb-3 post-meta">
-                <span>By Jayna</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>01 January 0001</span>
-                
-            </div>
-            <p class="card-text"></p>
-            <a href="https://jayna922.github.io/tags/%E5%AE%BF%E9%9C%A7/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-            
-            <a href="https://jayna922.github.io/tags/javascript/" class="h5 d-block my-3">Javascript</a>
-            <div class="mb-3 post-meta">
-                <span>By Jayna</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>01 January 0001</span>
-                
-            </div>
-            <p class="card-text"></p>
-            <a href="https://jayna922.github.io/tags/javascript/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-        </div>
-      </div>
+    </li>
+  </ul>
+</nav>
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<p>📌</p>
+<h3 id="第一步-下載nginx-">第一步: 下載Nginx :</h3>
+<p>網頁連結 : <a href="https://nginx.org/en/download.html">https://nginx.org/en/download.html</a></p>
+<p>1.進到網頁後,選取windows的最新版本下載</p>
+<p><img src="/images/code-nginx/1.png" alt=""></p>
+<p>2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮</p>
+<p><img src="/images/code-nginx/2.png" alt=""></p>
+<p>📌</p>
+<h3 id="第二步-啟動nginx-">第二步: 啟動Nginx :</h3>
+<ul>
+<li>啟動的方式有兩種 : (擇一使用)</li>
+</ul>
+<p>1.使用cmd的方式 :</p>
+<p>(1)先打開cmd/命令提示字元</p>
+<p>(2)指令: cd nginx-1.25.2\nginx (進入nginx資料夾)</p>
+<p>(3)指令: start nginx (啟動nginx) =&gt; 會看到畫面閃一下(代表成功啟動)</p>
+<p>2.直接點擊檔案中的應用程式 :</p>
+<p>(1)進到nginx(C:\Users\Downloads\nginx-1.25.2(1)\nginx)這個路由下</p>
+<p>(2)找到nginx.exe後點擊兩下 =&gt; 會看到畫面閃一下(代表成功啟動)</p>
+<p><img src="/images/code-nginx/start.png" alt=""></p>
+<p>📌</p>
+<h3 id="第三步-驗證nginx是否啟動-">第三步: 驗證Nginx是否啟動 :</h3>
+<h5 id="成功">成功:</h5>
+<ul>
+<li>直接到網頁上輸入這個網址 : 127.0.0.1</li>
+</ul>
+<p>看到以下畫面就代表成功開啟nginx</p>
+<p><img src="/images/code-nginx/view.png" alt=""></p>
+<h5 id="失敗">失敗:</h5>
+<p>可以打開工作管理員找一下是否開啟太多次nginx</p>
+<p>(有時候沒有停止上次執行的nginx又再啟動時也會出現這樣問題)</p>
+<p>可以嘗試先全部停止工作</p>
+<p>再執行第三步驟一次</p>
+<p><img src="/images/code-nginx/clear.png" alt=""></p>
+<p>📌</p>
+<h3 id="第四步-如何設定讓打包的專案透過nginx開啟-">第四步: 如何設定讓打包的專案透過nginx開啟 :</h3>
+<p>1.將打包後的專案放到html資料夾中(C:\Users\Downloads\nginx-1.25.2(1)\nginx\html)這個目錄底下</p>
+<p><img src="/images/code-nginx/code.png" alt=""></p>
+<p>2.到conf資料夾中找到nginx.conf檔案(C:\Users\mds_nb\Downloads\nginx-1.25.2(1)\nginx\conf)</p>
+<p>3.編輯nginx.conf</p>
+<p>(1)將預設port是80,可以改成自己想要的port</p>
+<p>(2)在root的地方 將位置指向專案的目錄下(04是我打包出來的專案)</p>
+<ul>
+<li>!注意! 一定要從html開始往下接續 (html/players/04)</li>
+</ul>
+<p><img src="/images/code-nginx/conf.png" alt=""></p>
+<p><img src="/images/code-nginx/setConf.png" alt=""></p>
+<p>📌</p>
+<h3 id="第五步-常用的nginx指令-">第五步: 常用的nginx指令 :</h3>
+<blockquote>
+<p>➼ 啟動指令：start nginx</p>
+</blockquote>
+<blockquote>
+<p>➼ 停止指令：nginx -s stop</p>
+</blockquote>
+<blockquote>
+<p>➼ 重啟指令：nginx -s reload</p>
+</blockquote>
+<blockquote>
+<p>➼ 測試Nginx的設定檔並顯示狀態指令: nginx -t</p>
+</blockquote>
+<!-- raw HTML omitted -->
 
-
-      
-      <div class="col-12 mt-5">
+        </div>
         
+        <script src="https://utteranc.es/client.js" repo="jayna922/jayna922.github.io" issue-term="title"
+          theme="github-light" crossorigin="anonymous" async>
+          </script>
       </div>
     </div>
   </div>
+  <div class="back-top hide" title="回頂部"></div>
 </section>
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        let backTopButton = document.querySelector(".back-top");
+        if (backTopButton.classList.contains("hide")) {
+          backTopButton.classList.toggle("hide");
+        }
+      } else {
+        document.querySelector(".back-top").classList.add("hide");
+      }
+    });
 
+    
+    document.querySelector(".back-top").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" 
+      });
+    });
+  });
+
+</script>
 
 
 

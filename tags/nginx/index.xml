@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on Jayna&#39;s Blog</title>
+    <link>https://jayna922.github.io/tags/nginx/</link>
+    <description>Recent content in Nginx on Jayna&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 17 Oct 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用Nginx點燃你的Web伺服器-nginx教學</title>
+      <link>https://jayna922.github.io/blog/code-nginx/</link>
+      <pubDate>Tue, 17 Oct 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://jayna922.github.io/blog/code-nginx/</guid>
+      <description>📌
+第一步: 下載Nginx : 網頁連結 : https://nginx.org/en/download.html
+1.進到網頁後,選取windows的最新版本下載
+2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮</description>
+    </item>
+    
+  </channel>
+</rss>
