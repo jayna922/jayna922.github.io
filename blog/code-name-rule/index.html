@@ -287,30 +287,41 @@
       </div>
     </div>
   </div>
-  <div class="back-top hide" title="回頂部"></div>
+  <div title="回頂部">
+    <img class="cat" id="cat_yellow" src="http://awiclass.monoame.com/catpic/cat_yellow_cat.png" alt="">
+    <div id="cross"></div>
+  </div>
 </section>
 <script>
-  
   document.addEventListener("DOMContentLoaded", function () {
-    
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 50) {
-        let backTopButton = document.querySelector(".back-top");
-        if (backTopButton.classList.contains("hide")) {
-          backTopButton.classList.toggle("hide");
-        }
-      } else {
-        document.querySelector(".back-top").classList.add("hide");
-      }
-    });
-
     
     document.querySelector(".back-top").addEventListener("click", function () {
       window.scrollTo({
         top: 0,
-        behavior: "smooth" 
+        behavior: "smooth"
       });
     });
+  });
+  window.addEventListener("mousemove", function (evt) {
+    var x = evt.pageX;
+    var y = evt.pageY;
+    
+
+    document.getElementById("cross").style.left = x + "px";
+    document.getElementById("cross").style.top = y + "px";
+
+    function updateCatPosition(catId) {
+      var catElement = document.getElementById(catId);
+      var catplace = catElement.getBoundingClientRect().left + catElement.offsetWidth / 2;
+
+      if (Math.abs(x - catplace) < 80) {
+        catElement.style.bottom = "0px";
+      } else {
+        catElement.style.bottom = "-50px";
+      }
+    }
+
+    updateCatPosition("cat_yellow");
   });
 
 </script>
