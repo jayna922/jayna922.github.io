@@ -13,10 +13,10 @@
       <pubDate>Tue, 17 Oct 2023 18:00:00 +0800</pubDate>
       
       <guid>https://jayna922.github.io/blog/code-nginx/</guid>
-      <description>📌
-第一步: 下載Nginx : 網頁連結 : https://nginx.org/en/download.html
+      <description>第一步: 下載Nginx : 網頁連結 : https://nginx.org/en/download.html
 1.進到網頁後,選取windows的最新版本下載
-2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮</description>
+2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮
+第二步: 啟動Nginx : 啟動的方式有兩種 : (擇一使用) 1.</description>
     </item>
     
   </channel>
