@@ -137,7 +137,7 @@
           
         </div>
         
-        <img src="https://jayna922.github.io/images/post/post-3.jpg" class="img-fluid w-100 mb-4" alt="用Nginx點燃你的Web伺服器-nginx教學">
+        <img src="https://jayna922.github.io/images/post/post-1.jpg" class="img-fluid w-100 mb-4" alt="用Nginx點燃你的Web伺服器-nginx教學">
         
         
         <nav id="TableOfContents">
@@ -158,9 +158,13 @@
 <h3 id="第一步-下載nginx-">第一步: 下載Nginx :</h3>
 <p>網頁連結 : <a href="https://nginx.org/en/download.html">https://nginx.org/en/download.html</a></p>
 <p>1.進到網頁後,選取windows的最新版本下載</p>
-<p><img src="/images/code-nginx/1.png" alt=""></p>
+<figure><img src="/images/code-nginx/1.png" width="70%"/>
+</figure>
+
 <p>2.下載後打開檔案總管(會在下載的資料夾中會看到剛剛所下載的壓縮檔),將壓縮檔解壓縮</p>
-<p><img src="/images/code-nginx/2.png" alt=""></p>
+<figure><img src="/images/code-nginx/2.png" width="70%"/>
+</figure>
+
 <h3 id="第二步-啟動nginx-">第二步: 啟動Nginx :</h3>
 <ul>
 <li>啟動的方式有兩種 : (擇一使用)</li>
@@ -172,23 +176,31 @@
 <p>2.直接點擊檔案中的應用程式 :</p>
 <p>(1)進到nginx(C:\Users\Downloads\nginx-1.25.2(1)\nginx)這個路由下</p>
 <p>(2)找到nginx.exe後點擊兩下 =&gt; 會看到畫面閃一下(代表成功啟動)</p>
-<p><img src="/images/code-nginx/start.png" alt=""></p>
+<figure><img src="/images/code-nginx/start.png" width="50%"/>
+</figure>
+
 <h3 id="第三步-驗證nginx是否啟動-">第三步: 驗證Nginx是否啟動 :</h3>
 <h5 id="成功">成功:</h5>
 <ul>
 <li>直接到網頁上輸入這個網址 : 127.0.0.1</li>
 </ul>
 <p>看到以下畫面就代表成功開啟nginx</p>
-<p><img src="/images/code-nginx/view.png" alt=""></p>
+<figure><img src="/images/code-nginx/view.png" width="70%"/>
+</figure>
+
 <h5 id="失敗">失敗:</h5>
 <p>可以打開工作管理員找一下是否開啟太多次nginx</p>
 <p>(有時候沒有停止上次執行的nginx又再啟動時也會出現這樣問題)</p>
 <p>可以嘗試先全部停止工作</p>
 <p>再執行第三步驟一次</p>
-<p><img src="/images/code-nginx/clear.png" alt=""></p>
+<figure><img src="/images/code-nginx/clear.png" width="50%"/>
+</figure>
+
 <h3 id="第四步-如何設定讓打包的專案透過nginx開啟-">第四步: 如何設定讓打包的專案透過nginx開啟 :</h3>
 <p>1.將打包後的專案放到html資料夾中(C:\Users\Downloads\nginx-1.25.2(1)\nginx\html)這個目錄底下</p>
-<p><img src="/images/code-nginx/code.png" alt=""></p>
+<figure><img src="/images/code-nginx/code.png" width="40%"/>
+</figure>
+
 <p>2.到conf資料夾中找到nginx.conf檔案(C:\Users\mds_nb\Downloads\nginx-1.25.2(1)\nginx\conf)</p>
 <p>3.編輯nginx.conf</p>
 <p>(1)將預設port是80,可以改成自己想要的port</p>
@@ -196,8 +208,12 @@
 <ul>
 <li>!注意! 一定要從html開始往下接續 (html/players/04)</li>
 </ul>
-<p><img src="/images/code-nginx/conf.png" alt=""></p>
-<p><img src="/images/code-nginx/setConf.png" alt=""></p>
+<figure><img src="/images/code-nginx/conf.png" width="50%"/>
+</figure>
+
+<figure><img src="/images/code-nginx/setConf.png" width="50%"/>
+</figure>
+
 <h3 id="第五步-常用的nginx指令-">第五步: 常用的nginx指令 :</h3>
 <blockquote>
 <p>➼ 啟動指令：start nginx</p>
