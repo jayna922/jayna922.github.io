@@ -250,6 +250,13 @@
         behavior: "smooth"
       });
     });
+    
+    document.querySelector(".back-top").addEventListener("touchstart", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   });
   window.addEventListener("mousemove", function (evt) {
     var x = evt.pageX;
