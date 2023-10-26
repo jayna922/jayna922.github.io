@@ -6,7 +6,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
-    content="this is meta description">
+    content="紀錄在GitHub Pages上部署靜態網站的流程,你如果也有這個煩惱那就跟著我的腳步開始吧~">
   
   <meta name="author" content="Jayna">
 
@@ -120,19 +120,98 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         
-        <h2>Game</h2>
+        <a href="/categories/%e6%8a%80%e8%a1%93%e6%96%87%e7%ab%a0" class="text-primary">技術文章</a>
+        
+        <h2>[靜態網站上線不求人]-如何在GitHub Pages上快速部署靜態網站</h2>
         <div class="mb-3 post-meta">
           <span>By Jayna</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>17 October 2023</span>
+          <span>24 October 2023</span>
           
         </div>
         
+        <img src="https://jayna922.github.io/images/post/post-5.jpg" class="img-fluid w-100 mb-4" alt="[靜態網站上線不求人]-如何在GitHub Pages上快速部署靜態網站">
         
-        <nav id="TableOfContents"></nav>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#第一步-先登入github帳號後建立一個新的repo">第一步: 先登入github帳號後,建立一個新的repo</a></li>
+        <li><a href="#第二步-建立好新的repo後把repo下載到自己的電腦上">第二步: 建立好新的repo後,把repo下載到自己的電腦上</a></li>
+        <li><a href="#第三步-將indexhtml想呈現的檔案放到資料夾中">第三步: 將index.html(想呈現的檔案)放到資料夾中</a></li>
+        <li><a href="#第四步-推上去git">第四步: 推上去git</a></li>
+        <li><a href="#第五步-設定github-pages">第五步: 設定github pages</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         <div class="content mb-5">
-          <p>game</p>
+          <!-- raw HTML omitted -->
+<h3 id="第一步-先登入github帳號後建立一個新的repo">第一步: 先登入github帳號後,建立一個新的repo</h3>
+<ol>
+<li>NEW(建立新的repo)</li>
+</ol>
+<figure><img src="/images/code-github-page/create.png" width="70%"/>
+</figure>
+
+<ol start="2">
+<li>輸入專案的名稱,其他設定為預設即可</li>
+</ol>
+<figure><img src="/images/code-github-page/name.png" width="70%"/>
+</figure>
+
+<ol start="3">
+<li>建立完成後,會看到以下畫面,複製起這串url</li>
+</ol>
+<figure><img src="/images/code-github-page/copy.png" width="70%"/>
+</figure>
+
+<h3 id="第二步-建立好新的repo後把repo下載到自己的電腦上">第二步: 建立好新的repo後,把repo下載到自己的電腦上</h3>
+<ol>
+<li>打開終端機
+:::
+指令: cd desktop (進到桌面)
+指令: git clone 網址 (下載專案,成功就會在桌面上看到所創的資料夾了)
+:::</li>
+</ol>
+<h3 id="第三步-將indexhtml想呈現的檔案放到資料夾中">第三步: 將index.html(想呈現的檔案)放到資料夾中</h3>
+<figure><img src="/images/code-github-page/put.png" width="70%"/>
+</figure>
+
+<h3 id="第四步-推上去git">第四步: 推上去git</h3>
+<p>指令: cd desktop
+指令: cd myResume
+指令: git add index.html 單檔案 (git add .*)全部
+指令: git commit -m &ldquo;add resume page&rdquo; (&ldquo;裡面可以填寫版本資訊&rdquo;)
+指令: git push -u origin main (推上git)</p>
+<h3 id="第五步-設定github-pages">第五步: 設定github pages</h3>
+<ol>
+<li>打開github專案頁面後(setting -&gt; pages)</li>
+</ol>
+<figure><img src="/images/code-github-page/setting.png" width="70%"/>
+</figure>
+
+<figure><img src="/images/code-github-page/pages.png" width="70%"/>
+</figure>
+
+<figure><img src="/images/code-github-page/githubpage.png" width="70%"/>
+</figure>
+
+<ol start="2">
+<li>選擇main / root -&gt; save</li>
+</ol>
+<figure><img src="/images/code-github-page/root.png" width="70%"/>
+</figure>
+
+<ol start="3">
+<li>成功就會看到這樣子的畫面囉~ 直接按下網址就可以看到自己靜態網站囉!!!</li>
+</ol>
+<figure><img src="/images/code-github-page/finish.png" width="70%"/>
+</figure>
+
+<!-- raw HTML omitted -->
 
         </div>
         

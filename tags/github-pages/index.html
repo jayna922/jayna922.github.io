@@ -6,7 +6,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
-    content="this is meta description">
+    content="This is meta description">
   
   <meta name="author" content="Jayna">
 
@@ -115,78 +115,103 @@
 </header>
 <!-- /navigation -->
 
+
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 mx-auto">
+      
+      <div class="col-lg-4">
+  <div class="widgets">
+    
+    <div class="widget">
+      
+      <h4 class="widget-title">About Me</h4>
+      
+      <img src="https://jayna922.github.io/images/author.jpg" alt=""
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+      
+      <p>驗光師轉職前端工程師</p>
+      <p>透過寫文章的方式</p>
+      <p>來記錄自己的</p>
+      <p>學習過程及旅遊分享</p>
+      
+      
+    </div>
+    
+    <div class="widget">
+      <h4 class="widget-title">Category</h4>
+      <ul class="list-unstyled">
+        <li><a href="/categories/%e6%8a%80%e8%a1%93%e6%96%87%e7%ab%a0/">技術文章</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="widget">
+      <h4 class="widget-title">Tag</h4>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/github-pages/">Github pages</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/javascript/">Javascript</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/nginx/">Nginx</a></li>
+      </ul>
+    </div>
+    
+    <div class="widget">
+      <h4 class="widget-title">Social</h4>
+      <ul class="list-inline social-links">
         
-        <h2>Game</h2>
-        <div class="mb-3 post-meta">
-          <span>By Jayna</span>
+        <li class="list-inline-item"><a href="https://www.instagram.com/jjj999222/"><i class="ti-instagram"></i></a></li>
+        
+        <li class="list-inline-item"><a href="https://github.com/jayna922"><i class="ti-github"></i></a></li>
+        
+      </ul>
+    </div>
+    
+    
+  </div>
+</div>
+      
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
           
-          <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>17 October 2023</span>
+          
+          <div class="col-md-6 mb-4">
+    <article class="card">
+        
+        <img src="https://jayna922.github.io/images/post/post-5.jpg" class="card-img-top" alt="[靜態網站上線不求人]-如何在GitHub Pages上快速部署靜態網站">
+        
+        <div class="card-body px-0">
+            
+            <a href="/categories/%e6%8a%80%e8%a1%93%e6%96%87%e7%ab%a0" class="text-primary">技術文章</a>
+            
+            <a href="https://jayna922.github.io/blog/code-github-page/" class="h5 d-block my-3">[靜態網站上線不求人]-如何在GitHub Pages上快速部署靜態網站</a>
+            <div class="mb-3 post-meta">
+                <span>By Jayna</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span>24 October 2023</span>
+                
+            </div>
+            <p class="card-text">紀錄在GitHub Pages上部署靜態網站的流程,你如果也有這個煩惱那就跟著我的腳步開始吧~</p>
+            <a href="https://jayna922.github.io/blog/code-github-page/" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
           
         </div>
-        
-        
-        <nav id="TableOfContents"></nav>
-        <div class="content mb-5">
-          <p>game</p>
+      </div>
 
-        </div>
+
+      
+      <div class="col-12 mt-5">
         
-        <script src="https://utteranc.es/client.js" repo="jayna922/jayna922.github.io" issue-term="title"
-          theme="github-light" crossorigin="anonymous" async>
-          </script>
       </div>
     </div>
   </div>
-  <div title="回頂部" class="mobile-none">
-    <img class="cat" id="cat_yellow" src="http://awiclass.monoame.com/catpic/cat_yellow_cat.png" alt="">
-    <div id="cross"></div>
-  </div>
 </section>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    
-    document.querySelector(".back-top").addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-  });
-  window.addEventListener("mousemove", function (evt) {
-    var x = evt.pageX;
-    var y = evt.pageY;
-    
 
-    document.getElementById("cross").style.left = x + "px";
-    document.getElementById("cross").style.top = y + "px";
-
-    function updateCatPosition(catId) {
-      var catElement = document.getElementById(catId);
-      var catplace = catElement.getBoundingClientRect().left + catElement.offsetWidth / 2;
-
-      if (Math.abs(x - catplace) < 80) {
-        catElement.style.bottom = "0px";
-      } else {
-        catElement.style.bottom = "-50px";
-      }
-    }
-
-    updateCatPosition("cat_yellow");
-  });
-
-</script>
-<style>
-  @media (max-width: 768px) {
-    .mobile-none {
-      display: none;
-    }
-  }
-</style>
 
 
 

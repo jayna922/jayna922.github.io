@@ -6,7 +6,16 @@
     <description>Recent content in 技術文章 on Jayna&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 17 Oct 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://jayna922.github.io/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[靜態網站上線不求人]-如何在GitHub Pages上快速部署靜態網站</title>
+      <link>https://jayna922.github.io/blog/code-github-page/</link>
+      <pubDate>Tue, 24 Oct 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://jayna922.github.io/blog/code-github-page/</guid>
+      <description>第一步: 先登入github帳號後,建立一個新的repo NEW(建立新的repo) 輸入專案的名稱,其他設定為預設即可 建立完成後,會看到以下畫面,複製起這串url 第二步: 建立好新的repo後,把repo下載到自己的電腦上 打開終端機 ::: 指令: cd desktop (進到桌面) 指令: git clone 網址 (下載專案,成功就會在桌面上看到所創的資料夾了) ::: 第三步: 將index.</description>
+    </item>
+    
     <item>
       <title>[用Nginx點燃你的Web伺服器]-nginx教學</title>
       <link>https://jayna922.github.io/blog/code-nginx/</link>
