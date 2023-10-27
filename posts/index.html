@@ -120,25 +120,85 @@
   </div>
 </header>
 <!-- /navigation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
+<section class="section-sm pb-0 post-section">
+  <div class="post-container">
+    <div>
+      <h2 class="post-year">2023</h2>
+      <div class="post-list">
+        <a href="http://localhost:1313/blog/code-github-page/">[ 靜態網站上線不求人 ] - 如何在GitHub Pages上快速部署靜態網站</a>
+        <p>2023/10/24</p>
+      </div>
+      <div class="post-list">
+        <a href="http://localhost:1313/blog/code-nginx/">[ 用Nginx點燃你的Web伺服器 ] - nginx教學</a>
+        <p>2023/10/17</p>
+      </div>
+      <div class="post-list">
+        <a href="http://localhost:1313/blog/code-name-rule/">[ 用JavaScript的命名魔法：讓你的程式碼充滿活力 ] - 變數命名規則</a>
+        <p>2023/10/11</p>
       </div>
     </div>
+    
   </div>
 </section>
+<script>
+  AOS.init({
+    
+    duration: 3000,
+  });
+</script>
+<style>
+  .post-section {
+    display: flex;
+    justify-content: center;
+  }
 
+  .post-year {
+    color: #E0CDD1;
+    margin-bottom: 20px;
+  }
+
+  .post-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .post-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+  .post-list a:hover {
+    color: #E0CDD1;
+  }
+
+  .post-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (max-width: 1040px) {
+    .post-list {
+      flex-direction: column-reverse;
+      background-color: #F8F6F2;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 27px;
+    }
+
+    .post-list a {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  }
+</style>
 
 
 
